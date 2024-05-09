@@ -1,4 +1,4 @@
-# Seby's Square-1 Site (SSS)
+# Seby's Square-1 Site
 
 The place where I will keep all my Square-1-related information!
 
