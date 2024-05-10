@@ -106,7 +106,6 @@ page-content a:hover {
 
 page-content #notes {
     margin: 10px;
-    font-size: 90%;
 }
 
 /***************************************************/
@@ -164,21 +163,26 @@ ul li a {
 .pll-algs {
     border: 3px double rgba(255, 255, 255, 0.4);
     padding: 10px;
-    margin: 5px 0px;
+    margin: 5px 0;
+    font-size: 1.2vw;
 
     background-color: rgba(0, 0, 0, 0.5);
 
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.red {
+    border-color: red;
 }
 
 .pll-algs img {
     margin: auto;
 
-    width: 120px;
-    height: 120px;
+    width: 9vw;
+    height: 9vw;
 }
 
 /***************************************************/
