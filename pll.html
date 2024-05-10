@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <title>PLL - Seby's Square-1 Site</title>
+</head>
+<body>
+    <header>
+        <div id="sss"><a href="./index.html">Seby's Square-1 Site</a></div>
+        <div id="settings"><a target="_blank" href="https://wo0fle.github.io/links/">🐶</a><!-- naming this settings just in case I decide to add a light mode some day, or any other thing that would require config --></div>
+    </header>
+    <page-content>
+        <h1>PLL</h1>
+
+        <div id="notes">The algorithms listed here are the ones I personally use and believe are the best.</div>
+        <div id="notes">I didn't include most of the PLLs with parity because I don't believe it is worth learning them (but I did include some!). Instead, you should <a target="_blank" href="https://www.youtube.com/watch?v=pXXr87kwZuI">learn CSP</a> to avoid parity problems in the first place!</div>   
+        <br>
+        <div id="notes"><i><b>Notes:</b> Algorithms marked with an asterisk (*) flip the middle layer. AUFs/ADFs not included in the algorithms.</i></div>   
+
+        <div id="plls-container">
+            <div class="pll-algs">Ua</div><div class="pll-algs"><img src="./images/pll/ua.png" alt="Ua Perm. Block on F."></div><div class="pll-algs">(1,0) / (0,-3) / (-1,0) / (3,0) / (1,0) / (0,3) / (-1,0) / (-3,0) /</div>
+            <div class="pll-algs">Ub</div><div class="pll-algs"><img src="./images/pll/ub.png" alt="Ub Perm. Block on F."></div><div class="pll-algs">/ (3,0) / (1,0) / (0,-3) / (-1,0) / (-3,0) / (1,0) / (0,3) /</div>
+            <div class="pll-algs">H</div><div class="pll-algs"><img src="./images/pll/h.png" alt="H Perm."></div><div class="pll-algs">/ (-3,3) / (3,-3) / (1,0) / (-3,3) / (3,-3) /<b>AKA</b>NN, offset NN</div>
+            <div class="pll-algs">Z</div><div class="pll-algs"><img src="./images/pll/z.png" alt="Z Perm. F edge swaps with L edge, R edge swaps with B edge."></div><div class="pll-algs">(1,0) / (-1,-1) / (-2,1) / (-1,-1) / (4,1) / (-1,-1) /<b>AKA</b>M2 U' M2 U M2</div>
+            <div class="pll-algs">Aa</div><div class="pll-algs"><img src="./images/pll/aa.png" alt="Aa Perm. Headlights on L."></div><div class="pll-algs">(1,0) / (3,0) / (-3,-3) / (0,3) / (2,0) / (3,0) / (-3,-3) / (0,3) /<b>AKA</b>offset JJ, U, JJ</div>
+            <div class="pll-algs">Ab</div><div class="pll-algs"><img src="./images/pll/ab.png" alt="Ab Perm. Headlights on R."></div><div class="pll-algs">/ (3,0) / (-3,-3) / (0,3) / (-2,0) / (3,0) / (-3,-3) / (0,3) /<b>AKA</b>JJ, U', offset JJ</div>
+            <div class="pll-algs">E</div><div class="pll-algs"><img src="./images/pll/e.png" alt="E Perm. Corners on F swap with corners on B."></div><div class="pll-algs">/ (3,3) / (1,-2) / (2,2) / (-3,0) / (-3,-3) /</div>
+            <div class="pll-algs">Ja</div><div class="pll-algs"><img src="./images/pll/ja.png" alt="Ja Perm. Block on L."></div><div class="pll-algs">(1,0) / (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) / (-3,0)</div>
+            <div class="pll-algs">Jb</div><div class="pll-algs"><img src="./images/pll/jb.png" alt="Jb Perm. Block on L."></div><div class="pll-algs">/ (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) / (-3,0)</div>
+            <div class="pll-algs">Ra</div><div class="pll-algs"><img src="./images/pll/ra.png" alt="Ra Perm. Headlights on L."></div><div class="pll-algs">(0,-3) / (3,0) / (-3,0) / (3,0) / (0,3) / (1,4) / (-1,2) / (-3,-3) /</div>
+            <div class="pll-algs">Rb</div><div class="pll-algs"><img src="./images/pll/rb.png" alt="Rb Perm. Headlights on R."></div><div class="pll-algs">(1,-3) / (3,0) / (-3,0) / (3,0) / (0,3) / (2,5) / (-2,1) / (-3,-3) /</div>
+            <div class="pll-algs">T</div><div class="pll-algs"><img src="./images/pll/t.png" alt="T Perm. Headlights on R."></div><div class="pll-algs">(1,0) / (3,0) / (-3,-3) / (0,3) / (-4,0) / (3,0) / (-3,-3) / (0,3) /<b>AKA</b>offset JJ, U', JJ</div>
+            <div class="pll-algs">F*</div><div class="pll-algs"><img src="./images/pll/f.png" alt="F Perm. Block on R, flipped middle layer."></div><div class="pll-algs">(1,0) / (-1,-1) / (-3,0) / (3,0) / (1,4) / (-3,0) / (3,0) / (2,-4) / (-3,0) /</div>
+            <div class="pll-algs">Y</div><div class="pll-algs"><img src="./images/pll/y.png" alt="Y Perm. BL corner swaps with FR corner, L edge swaps with B edge."></div><div class="pll-algs">/ (3,0) / (-3,-3) / (0,3) / (-5,0) / (3,0) / (-3,-3) / (0,3) /<b>AKA</b>JJ, U2, offset JJ</div>
+            <div class="pll-algs">V</div><div class="pll-algs"><img src="./images/pll/v.png" alt="V Perm. BL corner swaps with FR corner, B edge swaps with R edge."></div><div class="pll-algs">(0,6) / (3,0) / (-3,-3) / (0,3) / (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) /<b>AKA</b>D2, JJ, (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) /</div>
+            <div class="pll-algs">Na</div><div class="pll-algs"><img src="./images/pll/na.png" alt="Na Perm."></div><div class="pll-algs">/ (3,3) / (3,0) / (3,3) / (3,0) / (3,3) /</div>
+            <div class="pll-algs">Nb</div><div class="pll-algs"><img src="./images/pll/nb.png" alt="Nb Perm."></div><div class="pll-algs">(1,0) / (3,3) / (3,0) / (3,3) / (3,0) / (3,3) /</div>
+            <div class="pll-algs">Ga</div><div class="pll-algs"><img src="./images/pll/ga.png" alt="Ga Perm. Headlights on F. Block made of R edge and BR corner."></div><div class="pll-algs">/ (-3,-3) / (3,3) / (1,0) / (0,3) / (0,-3) / (0,3) / (0,-3) /<b>AKA</b>NN, offset JN</div>
+            <div class="pll-algs">Gb</div><div class="pll-algs"><img src="./images/pll/gb.png" alt="Gb Perm. Headlights on R. Block made of L edge and FL corner."></div><div class="pll-algs">(1,0) / (0,3) / (0,-3) / (0,3) / (0,-3) / (-1,0) / (-3,-3) / (3,3) /<b>AKA</b>offset JN, NN</div>
+            <div class="pll-algs">Gc</div><div class="pll-algs"><img src="./images/pll/gc.png" alt="Gc Perm. Headlights on F. Block made of L edge and BL corner."></div><div class="pll-algs">(1,0) / (-3,-3) / (3,3) / (-1,0) / (0,3) / (0,-3) / (0,3) / (0,-3) /<b>AKA</b>offset NN, JN</div>
+            <div class="pll-algs">Gd</div><div class="pll-algs"><img src="./images/pll/gd.png" alt="Gd Perm. Headlights on R. Block made of L edge and BL corner."></div><div class="pll-algs">/ (0,3) / (0,-3) / (0,3) / (0,-3) / (1,0) / (-3,-3) / (3,3) /<b>AKA</b>JN, offset NN</div>
+        </div>
+
+        <div id="plls-container">
+            <div class="pll-algs">Adjacent Swap (Edge Slash)*</div><div class="pll-algs"><img src="./images/pll/es.png" alt="Adjacent Swap (Edge Slash). F edge and R edge swap, flipped middle layer."></div><div class="pll-algs">/ (-3,0) / (0,3) / (0,-3) / (0,3) / (2,0) / (0,2) / (-2,0) / (4,0) / (0,-2) / (0,2) / (-1,4) / (0,-3) /</div>
+            <div class="pll-algs">Opposite Swap (Edge I)</div><div class="pll-algs"><img src="./images/pll/i.png" alt="Opposite Swap (Edge I). L edge and R edge swap."></div><div class="pll-algs">/ (3,3) / (1,0) / (-2,-2) / (-2,0) / (2,2) / (0,-2) / (-1,-1) / (0,3) / (-3,-3) / (1,0) / (2,2) /</div>
+            <div class="pll-algs">Oa</div><div class="pll-algs"><img src="./images/pll/oa.png" alt="Oa Perm. Edges cycle clockwise."></div><div class="pll-algs">(1,0) / (2,2) / (0,-2) / (3,3) / (1,0) / (-2,-2) / (-2,0) / (2,2) / (-1,0) / (-3,-3) /</div>
+            <div class="pll-algs">Ob</div><div class="pll-algs"><img src="./images/pll/ob.png" alt="Ob Perm. Edges cycle counterclockwise."></div><div class="pll-algs">/ (3,3) / (1,0) / (-2,-2) / (2,0) / (2,2) / (-1,0) / (-3,-3) / (0,2) / (-2,-2) /</div>
+            <div class="pll-algs">W*</div><div class="pll-algs"><img src="./images/pll/w.png" alt="W Perm. R and F faces look like a Z Perm, L and B faces look like an H Perm."></div><div class="pll-algs">(0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,-3) /</div>
+        </div>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </page-content>
+    <footer><div id="cool-guy"><a target="_blank" href="https://github.com/Wo0fle/square-1">random content will be made</a></div></footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -40,6 +40,7 @@ body {
     background-image: url('./images/bg.png');
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
+    background-attachment: fixed;
     
     color: white;
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
@@ -68,7 +69,7 @@ header {
     text-align: right;
 }
 
-#sss a {
+header div a {
     display: inline-block;
     transition: .5s;
     text-decoration: none;
@@ -79,11 +80,20 @@ header {
     text-decoration: underline;
 }
 
+#settings a:hover {
+    transform: rotateZ(360deg);
+}
+
 /***************************************************/
 
 page-content {
     padding: 25px;
     padding-bottom: 0;
+
+    flex-grow: 1;
+
+    width: 80vw;
+    margin: auto;
 }
 
 page-content a:link, page-content a:visited, page-content a:active {
@@ -147,16 +157,16 @@ ul li a {
     display: grid;
     grid-template-columns: auto auto auto;
 
-    width: 70vw;
-
     margin: auto;
     padding-top: 40px;
 }
 
 .pll-algs {
     border: 3px double rgba(255, 255, 255, 0.4);
-    padding: 20px;
+    padding: 10px;
     margin: 5px 0px;
+
+    background-color: rgba(0, 0, 0, 0.5);
 
     display: flex;
     justify-content: center;
@@ -164,13 +174,18 @@ ul li a {
     flex-direction: column;
 }
 
+.pll-algs img {
+    margin: auto;
+
+    width: 120px;
+    height: 120px;
+}
+
 /***************************************************/
 
 footer {
     background-color: black;
     font-size: smaller;
-    
-    width: 100%;
 }
 
 #cool-guy {
