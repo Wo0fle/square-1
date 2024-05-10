@@ -104,7 +104,7 @@ page-content a:hover {
     color: #0039c8;
 }
 
-page-content #notes {
+page-content div {
     margin: 10px;
 }
 
