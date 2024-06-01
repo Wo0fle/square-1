@@ -25,37 +25,44 @@
 
         <h3><i>Permute Last Layer</i></h3><br>
 
-        <div>I didn't include most of the PLLs with parity because I don't believe it is worth learning them (but I did include some, they're at the bottom!). Instead, you should <a target="_blank" href="https://www.youtube.com/watch?v=pXXr87kwZuI">learn CSP</a> to avoid parity problems in the first place!</div>   
+        <div>I didn't include most of the PLLs with parity because I don't believe it is worth learning most of them. Instead, you should <a target="_blank" href="https://docs.google.com/document/d/10N1Hnrn6S9Y684V1_0eJR53ElNiyHNPNw3eagvFnZs8/edit?usp=sharing">learn CSP</a> to avoid parity problems in the first place!</div>   
         <br>
-        <div>Algorithms in a <span style="display:inline-block;border:3px double red;padding:5px;">red box</span> flip the middle layer. AUFs are not included in any of the algorithms.</div>   
+        <div>Algorithms in a <span style="display:inline-block;border:3px double red;padding:5px;">red box</span> flip the middle layer. AUFs are not included in the algorithms.</div>   
+        
+        <br><br>
+        <h1 style="margin: 0;"><u>Non-Parity PLLs</u></h1>
 
         <div id="algs-container">
             <div class="alg-box">Ua</div><div class="alg-box"><img src="./images/pll/ua.png" alt="Ua Perm. Block on F."></div><div class="alg-box">(1,0) / (0,-3) / (-1,0) / (3,0) / (1,0) / (0,3) / (-1,0) / (-3,0) /</div>
             <div class="alg-box">Ub</div><div class="alg-box"><img src="./images/pll/ub.png" alt="Ub Perm. Block on F."></div><div class="alg-box">/ (3,0) / (1,0) / (0,-3) / (-1,0) / (-3,0) / (1,0) / (0,3) /</div>
-            <div class="alg-box">H</div><div class="alg-box"><img src="./images/pll/h.png" alt="H Perm."></div><div class="alg-box">/ (-3,3) / (3,-3) / (1,0) / (-3,3) / (3,-3) /<br><br>NN, offset NN</div>
+            <div class="alg-box">H</div><div class="alg-box"><img src="./images/pll/h.png" alt="H Perm."></div><div class="alg-box">/ (-3,3) / (3,-3) / (1,0) / (-3,3) / (3,-3) /<br><br>NN, top-misaligned NN</div>
             <div class="alg-box">Z</div><div class="alg-box"><img src="./images/pll/z.png" alt="Z Perm. F edge swaps with L edge, R edge swaps with B edge."></div><div class="alg-box">(1,0) / (-1,-1) / (-2,1) / (-1,-1) / (4,1) / (-1,-1) /<br><br>M2 U' M2 U M2</div>
-            <div class="alg-box">Aa</div><div class="alg-box"><img src="./images/pll/aa.png" alt="Aa Perm. Headlights on L."></div><div class="alg-box">(1,0) / (3,0) / (-3,-3) / (0,3) / (2,0) / (3,0) / (-3,-3) / (0,3) /<br><br>offset JJ, U, JJ</div>
-            <div class="alg-box">Ab</div><div class="alg-box"><img src="./images/pll/ab.png" alt="Ab Perm. Headlights on R."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (-2,0) / (3,0) / (-3,-3) / (0,3) /<br><br>JJ, U', offset JJ</div>
+            <div class="alg-box">Aa</div><div class="alg-box"><img src="./images/pll/aa.png" alt="Aa Perm. Headlights on L."></div><div class="alg-box">(1,0) / (3,0) / (-3,-3) / (0,3) / (2,0) / (3,0) / (-3,-3) / (0,3) /<br><br>top-misaligned JJ, U, JJ</div>
+            <div class="alg-box">Ab</div><div class="alg-box"><img src="./images/pll/ab.png" alt="Ab Perm. Headlights on R."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (-2,0) / (3,0) / (-3,-3) / (0,3) /<br><br>JJ, U', top-misaligned JJ</div>
             <div class="alg-box">E</div><div class="alg-box"><img src="./images/pll/e.png" alt="E Perm. Corners on F swap with corners on B."></div><div class="alg-box">(1,0) / (3,3) / (0,-3) / (2,2) / (-2,1) / (-3,-3) /</div>
-            <div class="alg-box">Ja</div><div class="alg-box"><img src="./images/pll/ja.png" alt="Ja Perm. Block on L."></div><div class="alg-box">(1,0) / (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) / (-3,0)</div>
-            <div class="alg-box">Jb</div><div class="alg-box"><img src="./images/pll/jb.png" alt="Jb Perm. Block on L."></div><div class="alg-box">/ (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) / (-3,0)</div>
+            <div class="alg-box">Ja</div><div class="alg-box"><img src="./images/pll/ja.png" alt="Ja Perm. Block on L."></div><div class="alg-box">(1,0) / (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) /</div>
+            <div class="alg-box">Jb</div><div class="alg-box"><img src="./images/pll/jb.png" alt="Jb Perm. Block on L."></div><div class="alg-box">/ (3,0) / (0,-3) / (3,0) / (-3,0) / (-3,3) /</div>
             <div class="alg-box">Ra</div><div class="alg-box"><img src="./images/pll/ra.png" alt="Ra Perm. Headlights on R."></div><div class="alg-box">(0,2) / (-3,0) / (3,0) / (-3,0) / (0,-3) / (4,1) / (-1,2) / (-3,-3) /</div>
-            <div class="alg-box">Rb</div><div class="alg-box"><img src="./images/pll/rb.png" alt="Rb Perm. Headlights on L."></div><div class="alg-box">(1,3) / (-3,0) / (3,0) / (-3,0) / (0,-3) / (-1,-4) / (4,1) / (-3,-3) /</div>
-            <div class="alg-box">T</div><div class="alg-box"><img src="./images/pll/t.png" alt="T Perm. Headlights on R."></div><div class="alg-box">(1,0) / (3,0) / (-3,-3) / (0,3) / (-4,0) / (3,0) / (-3,-3) / (0,3) /<br><br>offset JJ, U', JJ</div>
-            <div class="alg-box">F</div><div class="alg-box"><img src="./images/pll/f.png" alt="F Perm. Block on B."></div><div class="alg-box">(0,2) / (1,-2) / (-3,0) / (-1,2) / (0,-3) / (4,1) / (2,-1) / (-2,1) / (-4,-1) / (1,1) /</div>
-            <div class="alg-box">Y</div><div class="alg-box"><img src="./images/pll/y.png" alt="Y Perm. BL corner swaps with FR corner, L edge swaps with B edge."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (-5,0) / (3,0) / (-3,-3) / (0,3) /<br><br>JJ, U2, offset JJ</div>
-            <div class="alg-box">V</div><div class="alg-box"><img src="./images/pll/v.png" alt="V Perm. BL corner swaps with FR corner, B edge swaps with R edge."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) / (0,6)<br><br>JJ, (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) /, D2</div>
-            <div class="alg-box">Na</div><div class="alg-box"><img src="./images/pll/na.png" alt="Na Perm."></div><div class="alg-box">(0,-1) / (-3,-3) / (-3,0)/ (-3,-3) / (-3,0) / (-3,-3) /</div>
+            <div class="alg-box">Rb</div><div class="alg-box"><img src="./images/pll/rb.png" alt="Rb Perm. Headlights on L."></div><div class="alg-box">(1,6) / (-3,0) / (3,0) / (-3,0) / (0,-3) / (-1,-4) / (4,1) / (-3,-3) /</div>
+            <div class="alg-box">T</div><div class="alg-box"><img src="./images/pll/t.png" alt="T Perm. Headlights on R."></div><div class="alg-box">(1,0) / (3,0) / (-3,-3) / (0,3) / (-4,0) / (3,0) / (-3,-3) / (0,3) /<br><br>top-misaligned JJ, U', JJ</div>
+            <div class="alg-box">F</div><div class="alg-box"><img src="./images/pll/f.png" alt="F Perm. Block on B."></div><div class="alg-box">(0,2) / (1,-2) / (-3,0) / (-1,2) / (0,-3) / (4,1) / (2,-1) / (-2,1) / (-3,0) / (-1,-1) /</div>
+            <div class="alg-box">Y</div><div class="alg-box"><img src="./images/pll/y.png" alt="Y Perm. BL corner swaps with FR corner, L edge swaps with B edge."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (-5,0) / (3,0) / (-3,-3) / (0,3) /<br><br>JJ, U2, top-misaligned JJ</div>
+            <div class="alg-box">V</div><div class="alg-box"><img src="./images/pll/v.png" alt="V Perm. BL corner swaps with FR corner, B edge swaps with R edge."></div><div class="alg-box">/ (3,0) / (-3,-3) / (0,3) / (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) / (0,-5)<br><br>JJ, (0,-4) / (1,-5) / (0,3) / (-1,2) / (3,0) / (-3,0) /, D2</div>
+            <div class="alg-box">Na</div><div class="alg-box"><img src="./images/pll/na.png" alt="Na Perm."></div><div class="alg-box">/ (-3,-3) / (-3,0)/ (-3,-3) / (-3,0) / (-3,-3) /</div>
             <div class="alg-box">Nb</div><div class="alg-box"><img src="./images/pll/nb.png" alt="Nb Perm."></div><div class="alg-box">(1,0) / (-3,-3) / (-3,0)/ (-3,-3) / (-3,0) / (-3,-3) /</div>
-            <div class="alg-box">Ga</div><div class="alg-box"><img src="./images/pll/ga.png" alt="Ga Perm. Headlights on F. Block made of R edge and BR corner."></div><div class="alg-box"><br><br>NN, offset JN</div>
-            <div class="alg-box">Gb</div><div class="alg-box"><img src="./images/pll/gb.png" alt="Gb Perm. Headlights on L. Block made of R edge and BR corner."></div><div class="alg-box">(0,-1) / (-2,1) / (-1,2) / (-3,0) / (3,0)/ (1,-2) / (-1,-1) / (3,0) /</div>
-            <div class="alg-box">Gc</div><div class="alg-box"><img src="./images/pll/gc.png" alt="Gc Perm. Headlights on F. Block made of L edge and BL corner."></div><div class="alg-box"><br><br>offset NN, JN</div>
+            <div class="alg-box">Ga</div><div class="alg-box"><img src="./images/pll/ga.png" alt="Ga Perm. Headlights on F. Block made of R edge and BR corner."></div><div class="alg-box">/ (-3,3) / (3,-3) / (1,0) / (0,3) / (0,-3) / (0,3) / (0,-3) /<br><br>NN, top-misaligned JN</div>
+            <div class="alg-box">Gb</div><div class="alg-box"><img src="./images/pll/gb.png" alt="Gb Perm. Headlights on L. Block made of R edge and BR corner."></div><div class="alg-box">(0,-1) / (-2,1) / (-1,2) / (-3,0) / (3,0) / (1,-2) / (-1,-1) / (3,0) /</div>
+            <div class="alg-box">Gc</div><div class="alg-box"><img src="./images/pll/gc.png" alt="Gc Perm. Headlights on F. Block made of L edge and BL corner."></div><div class="alg-box">(1,0) / (-3,3) / (3,-3) / (-1,0) / (0,3) / (0,-3) / (0,3) / (0,-3) /<br><br>top-misaligned NN, JN</div>
             <div class="alg-box">Gd</div><div class="alg-box"><img src="./images/pll/gd.png" alt="Gd Perm. Headlights on R. Block made of L edge and BL corner."></div><div class="alg-box">(1,0) / (-1,2) / (1,-2) / (0,3) / (-3,0) / (2,-1) / (1,1) / (0,-3) /</div>
         </div>
 
+        <br><br><hr><br><br>
+        
+        <h1 style="margin: 0;"><u>Parity EPLLs</u></h1>
+
         <div id="algs-container">
             <div class="alg-box red">Adjacent Swap<b>AKA</b>Edge Slash</div><div class="alg-box red"><img src="./images/pll/es.png" alt="Adjacent Swap (Edge Slash). F edge and R edge swap, flipped middle layer."></div><div class="alg-box red">/ (-3,0) / (0,3) / (0,-3) / (0,3) / (2,0) / (0,2) / (-2,0) / (4,0) / (0,-2) / (0,2) / (-1,4) / (0,-3) / (0,3)</div>
-            <div class="alg-box">Opposite Swap<b>AKA</b>Edge I</div><div class="alg-box"><img src="./images/pll/i.png" alt="Opposite Swap (Edge I). L edge and R edge swap."></div><div class="alg-box">/ (3,3) / (1,0) / (-2,-2) / (-2,0) / (2,2) / (0,-2) / (-1,-1) / (0,3) / (-3,-3) / (1,0) / (2,2) / (0,-2)</div>
+            <div class="alg-box">Opposite Swap<b>AKA</b>Edge I</div><div class="alg-box"><img src="./images/pll/ei.png" alt="Opposite Swap (Edge I). L edge and R edge swap."></div><div class="alg-box">/ (3,3) / (1,0) / (-2,-2) / (-2,0) / (2,2) / (0,-2) / (-1,-1) / (0,3) / (-3,-3) / (1,0) / (2,2) / (0,-2)</div>
             <div class="alg-box">Oa</div><div class="alg-box"><img src="./images/pll/oa.png" alt="Oa Perm. Edges cycle clockwise."></div><div class="alg-box">(1,0) / (2,2) / (0,-2) / (3,3) / (1,0) / (-2,-2) / (-2,0) / (2,2) / (-1,0) / (-3,-3) /</div>
             <div class="alg-box">Ob</div><div class="alg-box"><img src="./images/pll/ob.png" alt="Ob Perm. Edges cycle counterclockwise."></div><div class="alg-box">/ (3,3) / (1,0) / (-2,-2) / (2,0) / (2,2) / (-1,0) / (-3,-3) / (0,2) / (-2,-2) /</div>
             <div class="alg-box red">W</div><div class="alg-box red"><img src="./images/pll/w.png" alt="W Perm. R and F faces look like a Z Perm, L and B faces look like an H Perm."></div><div class="alg-box red">(0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,-3) / (0,3)</div>
