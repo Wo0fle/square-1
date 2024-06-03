@@ -157,6 +157,16 @@ ul li a {
     background-color: var(--woofleBlue);
 }
 
+li a.external {
+    background-color: red;
+}
+
+li a.external:hover, li a.external:active {
+    background-color: rgb(150, 0, 0);
+    transform: none;
+    font-weight: normal;
+}
+
 /***************************************************/
 
 details>summary span.icon {
@@ -165,7 +175,7 @@ details>summary span.icon {
 }
   
 details[open] summary span.icon {
-   transform: rotate(180deg);
+   transform: rotate(-180deg);
 }
 
 span.icon {
@@ -202,6 +212,8 @@ summary::-webkit-details-marker {
 
     margin: auto;
     padding-top: 40px;
+
+    max-width: fit-content;
 }
 
 .alg-box {
@@ -224,12 +236,22 @@ summary::-webkit-details-marker {
 .alg-box img {
     margin: auto;
 
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border-radius: 10px;
+    border: 2px dotted rgba(255, 255, 255, 0.4);
+
+    padding: 15px;
 }
 
 .tallimg img {
+    min-width: 100px;
+    width: 11vw;
     height: auto;
+    padding: 0;
 }
 
 /***************************************************/
