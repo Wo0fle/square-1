@@ -158,11 +158,11 @@ ul li a {
 }
 
 li a.external {
-    background-color: red;
+    background-color: rgb(0, 30, 120);
 }
 
 li a.external:hover, li a.external:active {
-    background-color: rgb(150, 0, 0);
+    background-color: rgb(0, 15, 80);
     transform: none;
     font-weight: normal;
 }
