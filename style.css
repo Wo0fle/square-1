@@ -233,18 +233,20 @@ summary::-webkit-details-marker {
     border-color: red;
 }
 
+.blue {
+    border-color: var(--woofleBlue);
+}
+
 .alg-box img {
     margin: auto;
 
-    width: 130px;
-    height: 130px;
+    max-width: 200px;
+    width: 35vw;
+    height: 200px;
+}
 
-    background-color: rgba(255, 255, 255, 0.2);
-
-    border-radius: 10px;
-    border: 2px dotted rgba(255, 255, 255, 0.4);
-
-    padding: 15px;
+.alg-box.image {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .tallimg img {

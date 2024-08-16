@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="200" height="200" viewBox="-100.0 -100.0 200 200">
+<defs>
+</defs>
+<path d="M-19.29234185504083,72.0 L19.29234185504083,-72.0" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-50.0,50.0 L-50.0,13.397459621556134 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(0)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-60.0,60.0 L-50.0,50.0 Z" fill="rgb(255, 165, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(0)" />
+<path d="M-50.0,50.0 L-60.0,60.0 L-60.0,16.07695154586736 L-50.0,13.397459621556134 Z" fill="rgb(0, 255, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(0)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-36.60254037844386,36.60254037844387 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(60)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-43.92304845413263,43.92304845413264 L-36.60254037844386,36.60254037844387 Z" fill="rgb(0, 73, 255)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(60)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-50.0,50.0 L-50.0,13.397459621556134 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(90)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-60.0,60.0 L-50.0,50.0 Z" fill="rgb(0, 255, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(90)" />
+<path d="M-50.0,50.0 L-60.0,60.0 L-60.0,16.07695154586736 L-50.0,13.397459621556134 Z" fill="rgb(255, 0, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(90)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-36.60254037844386,36.60254037844387 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(150)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-43.92304845413263,43.92304845413264 L-36.60254037844386,36.60254037844387 Z" fill="rgb(0, 255, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(150)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-50.0,50.0 L-50.0,13.397459621556134 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(180)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-60.0,60.0 L-50.0,50.0 Z" fill="rgb(0, 73, 255)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(180)" />
+<path d="M-50.0,50.0 L-60.0,60.0 L-60.0,16.07695154586736 L-50.0,13.397459621556134 Z" fill="rgb(255, 165, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(180)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-36.60254037844386,36.60254037844387 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(240)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-43.92304845413263,43.92304845413264 L-36.60254037844386,36.60254037844387 Z" fill="rgb(255, 165, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(240)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-50.0,50.0 L-50.0,13.397459621556134 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(270)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-60.0,60.0 L-50.0,50.0 Z" fill="rgb(255, 0, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(270)" />
+<path d="M-50.0,50.0 L-60.0,60.0 L-60.0,16.07695154586736 L-50.0,13.397459621556134 Z" fill="rgb(0, 73, 255)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(270)" />
+<path d="M0,0 L-13.397459621556134,50.0 L-36.60254037844386,36.60254037844387 Z" fill="rgb(40, 40, 40)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(330)" />
+<path d="M-13.397459621556134,50.0 L-16.07695154586736,60.0 L-43.92304845413263,43.92304845413264 L-36.60254037844386,36.60254037844387 Z" fill="rgb(255, 0, 0)" stroke="rgb(0, 0, 0)" stroke-width="1" transform="translate(0, 0) rotate(330)" />
+</svg>
