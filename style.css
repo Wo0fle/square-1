@@ -101,6 +101,8 @@ page-content {
 
     width: 80vw;
     margin: auto;
+
+    text-shadow: 1px 1px 3px black;
 }
 
 page-content a:link, page-content a:visited, page-content a:active {
@@ -135,7 +137,6 @@ li a {
 
     transition: 0.15s;
 
-    text-shadow: 0 0 5px black;
     filter: drop-shadow(3px 3px 3px black);
 }
 
