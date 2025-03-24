@@ -238,6 +238,11 @@ summary::-webkit-details-marker {
     border-color: var(--woofleBlue);
 }
 
+.orange {
+    border-color: #ff9900;
+}
+
+
 .alg-box img {
     margin: auto;
 

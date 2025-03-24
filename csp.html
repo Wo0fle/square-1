@@ -24,10 +24,313 @@
 
         <h3><i>Cubeshape Parity</i></h3><br>
 
-        <div style="color:yellow;">
-            This page has not migrated to <b>SSS</b> yet!
+        <div>
+            For this guide, I am assuming <b>black top / white bottom</b> and an otherwise <b>standard color scheme</b>.
             <br><br>
-            Click <a href="https://docs.google.com/document/d/10N1Hnrn6S9Y684V1_0eJR53ElNiyHNPNw3eagvFnZs8/edit?usp=sharing" target="_blank">HERE</a> for my CSP guide (in a Google Doc).
+            - <b><u>Orientation</u></b> refers to the <b>color on U or D</b> (black or white),<br>
+            - <b><u>Color</u></b> refers to the <b>color on rest of the piece</b> (green, orange, blue, or red), and<br>
+            - <b><u>Type</u></b> refers to whether it is an <b>edge or a corner</b>.
+        </div>
+
+        <br>
+        <h1><u>Shapes</u></h1>
+        <h4><i>24 general shapes</i></h4>
+        <h5 style="margin:0;"><i>29 total shapes (i.e. mirrored shapes count seperately)</i></h5>
+        
+        <br>
+        <div>
+            <u>How it Works:</u><br><br>
+            - <b style="background:#674ea7;text-shadow:none;">Purple</b>: Starting position (start/continue tracing at this piece, going clockwise)<br>
+            - <b style="background:red;text-shadow:none;">Red</b>: Odd-numbered edge positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)<br>
+            - <b style="background:cyan;color:black;text-shadow:none;">Cyan</b>: Odd-numbered corner positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)
+            <br><br>
+            Keep in mind that these are the tracing positions that make the most sense to me, but if you don't like them, feel free to choose a new one.
+            Just remember to check the solutions with that shape in them to see if the odd/even solutions switched or not!
+        </div>
+        
+        <br><br>
+        <h3 style="margin: 0;"><u>0 Edges</u></h3>
+
+        <div id="algs-container">
+            <div class="alg-box">Star</div><div class="alg-box image"><img src="./images/csp/star.svg" alt="Star."></div><br>
+        </div>
+
+        <br><br>
+        <h3 style="margin: 0;"><u>2 Edges</u></h3>
+
+        <div id="algs-container">
+            <div class="alg-box">Pair<br>(Paired edges)</div><div class="alg-box image"><img src="./images/csp/pair.svg" alt="Pair (Paired edges)."></div><br>
+            <div class="alg-box">L<br>(Perpendicular edges)</div><div class="alg-box image"><img src="./images/csp/L.svg" alt="L (Perpendicular edges)."></div><br>
+            <div class="alg-box">I<br>(Parallel edges)</div><div class="alg-box image"><img src="./images/csp/I.svg" alt="I (Parallel edges)."></div><br>
+        </div>
+
+        <br><br>
+        <h3 style="margin: 0;"><u>4 Edges</u></h3>
+
+        <div id="algs-container">
+            <div class="alg-box">Scallop</div><div class="alg-box image"><img src="./images/csp/scallop.svg" alt="Scallop."></div><br>
+            <div class="alg-box">Shield</div><div class="alg-box image"><img src="./images/csp/shield.svg" alt="Shield."></div><br>
+            <div class="alg-box">Barrel</div><div class="alg-box image"><img src="./images/csp/barrel.svg" alt="Barrel."></div><br>
+            <div class="alg-box">Square</div><div class="alg-box image"><img src="./images/csp/square.svg" alt="Square."></div><br>
+            <div class="alg-box">Kite</div><div class="alg-box image"><img src="./images/csp/kite.svg" alt="Kite."></div><br>
+            <div class="alg-box">Paw<br>(Pawn)</div><div class="alg-box image">
+                Left Paw<img src="./images/csp/left paw.svg" alt="Left Paw (Left Pawn).">
+                Right Paw<img src="./images/csp/right paw.svg" alt="Right Paw (Right Pawn).">
+            </div><br>
+            <div class="alg-box">Muffin<br>(Mushroom)</div><div class="alg-box image"><img src="./images/csp/muffin.svg" alt="Muffin."></div><br>
+            <div class="alg-box">Fist</div><div class="alg-box image">
+                Left Fist<img src="./images/csp/left fist.svg" alt="Left Fist.">
+                Right Fist<img src="./images/csp/right fist.svg" alt="Right Fist.">
+            </div><br>
+        </div>
+
+        <br><br>
+        <h3 style="margin: 0;"><u>6 Edges</u></h3>
+
+        <div id="algs-container">
+            <div class="alg-box">2-2-2</div><div class="alg-box image"><img src="./images/csp/2-2-2.svg" alt="2-2-2."></div><br>
+            <div class="alg-box">3-3</div><div class="alg-box image"><img src="./images/csp/3-3.svg" alt="3-3."></div><br>
+            <div class="alg-box">House</div><div class="alg-box image">
+                3-1-2<img src="./images/csp/3-1-2.svg" alt="3-1-2.">
+                3-2-1<img src="./images/csp/3-2-1.svg" alt="3-2-1.">
+            </div><br>
+            <div class="alg-box">4-2</div><div class="alg-box image">
+                Left 4-2<img src="./images/csp/left 4-2.svg" alt="Left 4-2.">
+                Right 4-2<img src="./images/csp/right 4-2.svg" alt="Right 4-2.">
+            </div><br>
+            <div class="alg-box">4-1-1</div><div class="alg-box image"><img src="./images/csp/4-1-1.svg" alt="4-1-1."></div><br>
+            <div class="alg-box">5-1</div><div class="alg-box image">
+                Left 5-1<img src="./images/csp/left 5-1.svg" alt="Left 5-1.">
+                Right 5-1<img src="./images/csp/right 5-1.svg" alt="Right 5-1.">
+            </div><br>
+            <div class="alg-box">6</div><div class="alg-box image"><img src="./images/csp/6.svg" alt="6."></div><br>
+        </div>
+
+        <br><br>
+        <h3 style="margin: 0;"><u>8 Edges</u></h3>
+
+        <div id="algs-container">
+            <div class="alg-box">8</div><div class="alg-box image"><img src="./images/csp/8.svg" alt="8."></div><br>
+            <div class="alg-box">7-1</div><div class="alg-box image"><img src="./images/csp/7-1.svg" alt="7-1."></div><br>
+            <div class="alg-box">6-2</div><div class="alg-box image"><img src="./images/csp/6-2.svg" alt="6-2."></div><br>
+            <div class="alg-box">5-3</div><div class="alg-box image"><img src="./images/csp/5-3.svg" alt="5-3."></div><br>
+            <div class="alg-box">4-4</div><div class="alg-box image"><img src="./images/csp/4-4.svg" alt="4-4."></div><br>
+        </div>
+
+        <br><br><hr><br><br>
+        
+        <h1 style="margin: 0;"><u>Tracing</u></h1><br><br>
+
+        <div>
+            Start your parity count at 0.
+        </div>
+
+        <div id="algs-container">
+            <div class="alg-box">1. White Edge Color Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                You are going to observe the <b>first 3 white edges</b> of the cubeshape (i.e. <b>starting</b> from the <b>purple piece</b> of the <b>first layer listed in the case</b>), and <b>reduce it to 2</b>.
+                <br><br>
+                If a <b>color</b> is <b>followed by its opposite</b>, <b>remove the opposite</b>.
+                <br><br>
+                <div class="alg-box" style="display: inline-block;font-size:80%;">
+                    <u>Example</u>: <b>Green</b>, Blue, <b>Red</b> would be reduced to <b>Green, Red</b>.
+                    <br>
+                    When tracing, I usually think of nothing instead of the opposite color to make it easier.
+                    <br>
+                    So, I would think "Green, ..., Red", which reduces to Green, Red.
+                </div>
+                <br><br>
+                If there are <b>no opposite colors adjacent to each other</b>, <b>ignore the first color</b>.
+                <br><br>
+                <div class="alg-box" style="display: inline-block;font-size:80%;">
+                    <u>Example</u>:  Blue, <b>Orange</b>, <b>Green</b> would be reduced to <b>Orange, Green</b>.
+                    <br>
+                    When tracing, once I notice that Blue and Orange are not opposites, when I see Green is the last color (not the opposite of Orange), I forget about Blue, leaving me with only Orange, Green.
+                </div>
+                <br><br>
+                Consider the <b>two remaining colors</b>.
+                <br><br>
+                If they are <u>Blue and Orange</u> <b>or</b> <u>Red and Green</u>, <b>+1 to parity count</b>.
+                <br><br>
+                Otherwise, add nothing.
+            </div><br>
+
+            <div class="alg-box">2. Black Edge Color Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                <b>Same as above</b>, but with the <b>black edges</b>.
+            </div><br>
+
+            <div class="alg-box">3. White Corner Color Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                <b>Same as above</b>, but with the <b>white corners</b>.
+                <br><br>
+                The color you should be considering is the <b>counter-clockwisemost color on the corner</b>.
+            </div><br>
+
+            <div class="alg-box">4. Black Corner Color Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                <b>Same as above</b>, but with the <b>black corners</b>.
+            </div><br>
+
+            <div class="alg-box">5. Edge Position Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                Consider the <b>orientation</b> of the <b>edges in the odd-numbered edge positions</b> (i.e the <b>red pieces</b>), including the <b>purple piece</b> if it is an edge.
+                <br><br>
+                If there are an <u>odd amount</u> of <u>black edges</u> in these positions, <b>+1 to parity count</b>.
+                <br><br>
+                Otherwise, add nothing.
+            </div><br>
+
+            <div class="alg-box">6. Corner Position Parity</div>
+            <div class="alg-box" style="display:inline-block;padding:30px;">
+                Same as above, but instead consider the <b>orientation</b> of the <b>corners in the odd-numbered corner positions</b> (i.e the <b>cyan pieces</b>), including the <b>purple piece</b> if it is a corner. 
+            </div><br>
+        </div><br>
+
+        <div>
+            Once you finish those 6 steps, your parity count being odd or even (i.e. the parity of the number) determines the solution!
+        </div>
+
+        <br><br><hr><br>
+
+        <h1><u>Solution</u></h1>
+        <h4><i>65 general cases</i></h4>
+        <h5 style="margin:0;"><i>78 distinct cases (i.e. horizontally mirrored cubeshapes with different solutions count separately)</i></h5>
+        
+        <br>
+        <div>
+            <u>How it Works:</u><br><br>
+            For the general cubeshape <b>X/Y</b>, start tracing from the <b>starting position</b> (i.e. the <b>purple piece</b>) of <b>X</b>,
+            even if it is on the bottom layer.
+            <br><br>
+            <div class="alg-box" style="display:inline-block;font-size:80%;">
+                <u>Example:</u> 
+                For the case <b>8/Star</b>, start tracing from the <b>purple piece</b> of the <b>8</b>. 
+                If it is on the bottom, I like to do a z2 rotation and trace from there.
+            </div>
+            <br><br>
+            If a case is in an <span style="display:inline-block;border:3px double #ff9900;padding:5px;">orange box</span>
+            you will have to <b>+1 extra</b> to your parity count before determining your solution.
+            <br><br>
+            These solutions are written as <b>reductions to 3-slicers</b> (which you should already know <u>optimally</u>) and should <b>work from any angle</b>.
+            <br><br>
+            The cases below are listed in order of <b>most to least probable</b>, according to <a href="https://hashtagcuber.com/csp/" target="_blank">Hashtag Cuber's website</a>. 
+            It is <b>recommended</b> to learn them in this order, but I also have <b>my own order</b> of learning cases which is 
+            only slightly different (where cases and case sets are roughly organized by similarity to each other, probability, and simplicity):
+            <ul>
+                <li><a class="external" href="https://docs.google.com/spreadsheets/d/10SMsPRTA736d0rY7ccRPQGR8FWtW-STAdX79_gyCXFU/edit?usp=sharing" target="_blank">Seby's CSP Case Sets</a></li>
+            </ul>
+        </div>
+
+        <div id="algs-container" style="padding-top:0">
+            <div class="alg-box">
+                <div class="alg-box orange">
+                    <b>Left 4-2/Pair</b>
+                </div>
+                <div class="alg-box">
+                    <b>Right 4-2/Pair</b>
+                </div>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - Shield/Shield<br>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - Scallop/Scallop<br>
+                - Solve
+            </div>
+
+            <div class="alg-box">
+                <b>4-1-1/Pair</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's clockwise-most L)</span>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's counterclockwise-most L)</span>
+                - Solve
+            </div>
+
+            <div class="alg-box">
+                <b>3-3/Pair</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's clockwise-most edge)</span>
+                - Scallop/Kite<br>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's counterclockwise-most edge)</span>
+                - Scallop/Kite<br>
+                - Solve
+            </div>
+
+            <div class="alg-box">
+                <b>House/Pair</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - House/L<br>
+                - Shield/Square<br>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - 5-1/Pair<br>
+                - Scallop/Kite<br>
+                - Solve
+            </div>
+
+            <div class="alg-box">
+                <b>Scallop/Shield</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's counterclockwise-most Pair)</span>
+                - Scallop/Scallop<br>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's clockwise-most Pair)</span>
+                - Scallop/Scallop<br>
+                - Solve
+            </div>
+
+            <div class="alg-box">
+                <div class="alg-box">
+                    <b>Scallop/Left Fist</b>
+                </div>
+                <div class="alg-box orange">
+                    <b>Scallop/Right Fist</b>
+                </div>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                - Left 5-1/Pair<br>
+                - Scallop/Kite<br>
+                - Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                - Right 5-1/Pair<br>
+                - Scallop/Kite<br>
+                - Solve
+            </div>
+        </div>
+
+        <div style="color: yellow;">
+            ...<br><br>
+            the rest is coming soon i promise<br><br>
+
+            <a href="https://docs.google.com/document/d/10N1Hnrn6S9Y684V1_0eJR53ElNiyHNPNw3eagvFnZs8/edit?usp=sharing" target="_blank">Seby's CSP Guide Google Doc</a>
         </div>
 
         <ul>
