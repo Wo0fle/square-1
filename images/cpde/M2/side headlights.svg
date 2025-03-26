@@ -5,7 +5,7 @@
    viewBox="-100.0 -190.0 200 380.0"
    version="1.1"
    id="svg42"
-   sodipodi:docname="right headlights.svg"
+   sodipodi:docname="side headlights.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -20,11 +20,11 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="2.0447368"
-     inkscape:cx="100.01287"
+     inkscape:zoom="2.9921053"
+     inkscape:cx="100.09675"
      inkscape:cy="190"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -46,14 +46,14 @@
      id="path2" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-62.5,62.5 L-50.0,50.0 Z"
-     fill="rgb(0, 73, 255)"
+     fill="rgb(255, 165, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(0)"
      id="path3" />
   <path
      d="M-50.0,50.0 L-62.5,62.5 L-62.5,16.74682452694517 L-50.0,13.397459621556134 Z"
-     fill="rgb(255, 165, 0)"
+     fill="rgb(0, 255, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(0)"
@@ -67,7 +67,7 @@
      id="path5" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-45.753175473054824,45.75317547305484 L-36.60254037844386,36.60254037844387 Z"
-     fill="rgb(255, 165, 0)"
+     fill="rgb(0, 255, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(60)"
@@ -82,14 +82,14 @@
      id="path7" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-62.5,62.5 L-50.0,50.0 Z"
-     fill="rgb(255, 0, 0)"
+     fill="rgb(0, 255, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(90)"
      id="path8" />
   <path
      d="M-50.0,50.0 L-62.5,62.5 L-62.5,16.74682452694517 L-50.0,13.397459621556134 Z"
-     fill="rgb(0, 73, 255)"
+     fill="rgb(255, 0, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(90)"
@@ -117,14 +117,14 @@
      id="path12" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-62.5,62.5 L-50.0,50.0 Z"
-     fill="rgb(255, 165, 0)"
+     fill="rgb(0, 73, 255)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(180)"
      id="path13" />
   <path
      d="M-50.0,50.0 L-62.5,62.5 L-62.5,16.74682452694517 L-50.0,13.397459621556134 Z"
-     fill="rgb(0, 255, 0)"
+     fill="rgb(255, 165, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(180)"
@@ -138,7 +138,7 @@
      id="path15" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-45.753175473054824,45.75317547305484 L-36.60254037844386,36.60254037844387 Z"
-     fill="rgb(0, 255, 0)"
+     fill="rgb(255, 0, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(240)"
@@ -153,14 +153,14 @@
      id="path17" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-62.5,62.5 L-50.0,50.0 Z"
-     fill="rgb(0, 255, 0)"
+     fill="rgb(255, 0, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(270)"
      id="path18" />
   <path
      d="M-50.0,50.0 L-62.5,62.5 L-62.5,16.74682452694517 L-50.0,13.397459621556134 Z"
-     fill="rgb(255, 0, 0)"
+     fill="rgb(0, 73, 255)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, -90.0) rotate(270)"
@@ -265,7 +265,7 @@
      id="path33" />
   <path
      d="M-13.397459621556134,50.0 L-16.74682452694517,62.5 L-45.753175473054824,45.75317547305484 L-36.60254037844386,36.60254037844387 Z"
-     fill="rgb(255, 0, 0)"
+     fill="rgb(255, 165, 0)"
      stroke="rgb(0, 0, 0)"
      stroke-width="1"
      transform="translate(0, 90.0) rotate(330)"
