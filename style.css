@@ -230,9 +230,18 @@ summary::-webkit-details-marker {
     flex-direction: column;
 }
 
-.lowkey {
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.25);
+.twowide {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    margin: auto;
+
+    max-width: fit-content;
+}
+
+.invis {
+    border: 0;
+    background-color: transparent;
 }
 
 .red {

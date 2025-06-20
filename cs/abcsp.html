@@ -36,43 +36,91 @@
             Same as before, these solutions are written as <b>reductions to 3-slicers</b> (which you should already know <u>optimally</u>), and
             if a case is in an <span style="display:inline-block;border:3px double #ff9900;padding:5px;">orange box</span>
             you will have to <b>+1 extra</b> to your parity count before determining your solution.
+            <br><br>
+            If an algorithm is in a <span style="display:inline-block;border:3px double red;padding:5px;">red</span> box,
+            start with an <b>upslice</b>, and if it is in a <span style="display:inline-block;border:3px double #0049ff;padding:5px;">blue</span> box,
+            start with a <b>downslice</b>.
         </div>
 
         <div id="algs-container">
-            <div class="alg-box orange ">
-                <b>Left 4-2/Pair</b>
+            <div class="alg-box orange">
+                <b>Left 4-2/Pair</b><br><b>Pair/Left 4-2</b>
             </div>
             <div class="alg-box orange tallimg image">
-                <b>Odd:</b><br>
-                <div class="alg-box lowkey">
-                    / 4,0
+                <b>Odd:</b>
+
+                <div class="twowide">
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/odd/left42-pair.svg" alt="/4/1/-3,-3/">
+                        <div class="alg-box blue">
+                            / 4,0
+                        </div>
+                    </div>
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/odd/pair-left42.svg" alt="/-2,2/-1/-3,-3/">
+                        <div class="alg-box blue">
+                            / -2,2
+                        </div>
+                    </div>
                 </div>
-                <img src="../images/cs/abcsp/odd/left42-pair.svg" alt="/4/1/-3,-3/">
             </div>
             <div class="alg-box orange tallimg image">
-                <b>Even:</b><br>
-                <div class="alg-box lowkey">
-                    / -2,0
+                <b>Even:</b>
+                
+                <div class="twowide">
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/even/left42-pair.svg" alt="/-2/-1,-2/-3,-3/">
+                        <div class="alg-box blue">
+                            / -2,0
+                        </div>
+                    </div>
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/even/pair-left42.svg" alt="/-2/1,2/-3,-3/">
+                        <div class="alg-box blue">
+                            / -2,0
+                        </div>
+                    </div>
                 </div>
-                <img src="../images/cs/abcsp/even/left42-pair.svg" alt="/-2/-1,-2/-3,-3/">
             </div>
 
             <div class="alg-box">
                 <b>Right 4-2/Pair</b>
             </div>
             <div class="alg-box tallimg image">
-                <b>Odd:</b><br>
-                <div class="alg-box lowkey">
-                    / -4,0
+                <b>Odd:</b>
+
+                <div class="twowide">
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/odd/right42-pair.svg" alt="/-4/-1/-3,-3/">
+                        <div class="alg-box blue">
+                            / -4,0
+                        </div>
+                    </div>
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/odd/pair-right42.svg" alt="/-4/0,-1/3,3/">
+                        <div class="alg-box red">
+                            / -4,0
+                        </div>
+                    </div>
                 </div>
-                <img src="../images/cs/abcsp/odd/right42-pair.svg" alt="/-4/-1/-3,-3/">
             </div>
             <div class="alg-box tallimg image">
-                <b>Even:</b><br>
-                <div class="alg-box lowkey">
-                    / 2,0
+                <b>Even:</b>
+                
+                <div class="twowide">
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/even/right42-pair.svg" alt="/2/1,2/-3,-3/">
+                        <div class="alg-box blue">
+                            / 2,0
+                        </div>
+                    </div>
+                    <div class="alg-box invis">
+                        <img src="../images/cs/abcsp/even/pair-right42.svg" alt="/0,2/-1,-2/-3,-3/">
+                        <div class="alg-box blue">
+                            / 0,2
+                        </div>
+                    </div>
                 </div>
-                <img src="../images/cs/abcsp/even/right42-pair.svg" alt="/2/1,2/-3,-3/">
             </div>
         </div>
 
