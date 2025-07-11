@@ -28,9 +28,9 @@
         <div>
             For this guide, I am assuming <b>black top / white bottom</b> and an otherwise <b>standard color scheme</b>.
             <br><br>
-            - <b><u>Orientation</u></b> refers to the <b>color on U or D</b> (black or white),<br>
-            - <b><u>Color</u></b> refers to the <b>color on rest of the piece</b> (green, orange, blue, or red), and<br>
-            - <b><u>Type</u></b> refers to whether it is an <b>edge or a corner</b>.
+            • <b><u>Orientation</u></b> refers to the <b>color on U or D</b> (black or white),<br>
+            • <b><u>Color</u></b> refers to the <b>color on rest of the piece</b> (green, orange, blue, or red), and<br>
+            • <b><u>Type</u></b> refers to whether it is an <b>edge or a corner</b>.
         </div>
 
         <br>
@@ -41,12 +41,12 @@
         <br>
         <div>
             <u>How it Works:</u><br><br>
-            - <b style="background:#674ea7;text-shadow:none;">Purple</b>: Starting position (start/continue tracing at this piece, going clockwise)<br>
-            - <b style="background:red;text-shadow:none;">Red</b>: Odd-numbered edge positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)<br>
-            - <b style="background:cyan;color:black;text-shadow:none;">Cyan</b>: Odd-numbered corner positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)
+            • <b style="background:#674ea7;text-shadow:none;">Purple</b>: Starting position (start/continue tracing at this piece, going clockwise)<br>
+            • <b style="background:red;text-shadow:none;">Red</b>: Odd-numbered edge positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)<br>
+            • <b style="background:cyan;color:black;text-shadow:none;">Cyan</b>: Odd-numbered corner positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)
             <br><br>
-            Keep in mind that these are the tracing positions that make the most sense to me, but if you don't like them, feel free to choose a new one.
-            Just remember to check the solutions with that shape in them to see if the odd/even solutions switched or not!
+            Keep in mind that these are the tracing positions that make the most sense to me, but if you don't like them, feel free to choose a new one.<br><br>
+            <span style="font-size: 120%;">Just remember to <b>check the solutions</b> with that shape in them to see if the <b>Odd/Even solutions swapped</b> or not!</span>
         </div>
         
         <br><br>
@@ -162,10 +162,11 @@
             </div><br>
 
             <div class="alg-box">3. White Corner Color Parity</div>
-            <div class="alg-box" style="display:inline-block;padding:30px;">
+            <div class="alg-box" style="display:inline-block;padding:30px;padding-bottom:0;">
                 <b>Same as above</b>, but with the <b>white corners</b>.
                 <br><br>
-                The color you should be considering is the <b>counter-clockwisemost color on the corner</b>.
+                The color on the corner you should be considering is the <b>counter-clockwisemost color on the corner</b>.<br>
+                <img src="../images/cs/csp/colors_of_corners.svg">
             </div><br>
 
             <div class="alg-box">4. Black Corner Color Parity</div>
@@ -175,7 +176,7 @@
 
             <div class="alg-box">5. Edge Position Parity</div>
             <div class="alg-box" style="display:inline-block;padding:30px;">
-                Consider the <b>orientation</b> of the <b>edges in the odd-numbered edge positions</b> (i.e the <b><span style="background:red;text-shadow:none;">red</span> pieces</b>), including the <b>purple piece</b> if it is an edge.
+                Consider the <b>orientation</b> of the <b>edges in the odd-numbered edge positions</b> (i.e the <b><span style="background:red;text-shadow:none;">red</span> pieces</b>), including the <b style="background:#674ea7;text-shadow:none;">purple piece</b> if it is an edge.
                 <br><br>
                 If there are an <u>odd amount</u> of <u>black edges</u> in these positions, <b>+1 to parity count</b>.
                 <br><br>
@@ -184,7 +185,7 @@
 
             <div class="alg-box">6. Corner Position Parity</div>
             <div class="alg-box" style="display:inline-block;padding:30px;">
-                Same as above, but instead consider the <b>orientation</b> of the <b>corners in the odd-numbered corner positions</b> (i.e the <b><span style="background:cyan;color:black;text-shadow:none;">cyan</span> pieces</b>), including the <b>purple piece</b> if it is a corner. 
+                Same as above, but instead consider the <b>orientation</b> of the <b>corners in the odd-numbered corner positions</b> (i.e the <b><span style="background:cyan;color:black;text-shadow:none;">cyan</span> pieces</b>), including the <b style="background:#674ea7;text-shadow:none;">purple piece</b> if it is a corner. 
             </div><br>
         </div><br>
 
@@ -234,13 +235,13 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Shield/Shield<br>
-                - Solve
+                • Shield/Shield<br>
+                • Solve
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Scallop/Scallop<br>
-                - Solve
+                • Scallop/Scallop<br>
+                • Solve
             </div>
 
             <div class="alg-box">
@@ -248,13 +249,17 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's clockwise-most L)</span>
-                - Solve
+                <span>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's clockwise-most L)</span><br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's counterclockwise-most L)</span>
-                - Solve
+                <span>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by connecting Pair to 4-1-1's counterclockwise-most L)</span><br>
+                    • Solve
+                </span>
             </div>
 
             <div class="alg-box">
@@ -262,15 +267,19 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's clockwise-most edge)</span>
-                - Scallop/Kite<br>
-                - Solve
+                <span>
+                    • Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's clockwise-most edge)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's counterclockwise-most edge)</span>
-                - Scallop/Kite<br>
-                - Solve
+                <span>
+                    • Shield/Muffin <span style="font-size:80%;">(by connecting 3-3's I to the Pair's counterclockwise-most edge)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
             </div>
 
             <div class="alg-box">
@@ -278,15 +287,15 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - House/L<br>
-                - Shield/Square<br>
-                - Solve
+                • House/L<br>
+                • Shield/Square<br>
+                • Solve
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - 5-1/Pair<br>
-                - Scallop/Kite<br>
-                - Solve
+                • 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
             </div>
 
             <div class="alg-box">
@@ -294,15 +303,19 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's counterclockwise-most Pair)</span>
-                - Scallop/Scallop<br>
-                - Solve
+                <span>
+                    • 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's counterclockwise-most Pair)</span><br>
+                    • Scallop/Scallop<br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's clockwise-most Pair)</span>
-                - Scallop/Scallop<br>
-                - Solve
+                <span>
+                    • 4-2/Pair <span style="font-size:80%;">(by slicing across Shield's clockwise-most Pair)</span><br>
+                    • Scallop/Scallop<br>
+                    • Solve
+                </span>
             </div>
 
             <div class="alg-box">
@@ -315,15 +328,15 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Left 5-1/Pair<br>
-                - Scallop/Kite<br>
-                - Solve
+                • Left 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Right 5-1/Pair<br>
-                - Scallop/Kite<br>
-                - Solve
+                • Right 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
             </div>
 
             <div class="alg-box">
@@ -331,15 +344,19 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - 3-3/L<br>
-                - Opposite Paw/Paw<span style="font-size:80%;">(by connecting one of 3-3's pairs to L's clockwise-most edge)</span>
-                - Solve
+                <span>
+                    • 3-3/L<br>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by connecting one of 3-3's pairs to L's clockwise-most edge)</span><br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - 3-3/L<br>
-                - Opposite Paw/Paw<span style="font-size:80%;">(by connecting one of 3-3's pairs to L's counterclockwise-most edge)</span>
-                - Solve
+                <span>
+                    • 3-3/L<br>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by connecting one of 3-3's pairs to L's counterclockwise-most edge)</span><br>
+                    • Solve
+                </span>
             </div>
 
             <div class="alg-box">
@@ -347,13 +364,17 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Scallop/Scallop<span style="font-size:80%;">(by connecting Pair to 6's counterclockwise-most pair)</span>
-                - Solve
+                <span>
+                    • Scallop/Scallop <span style="font-size:80%;">(by connecting Pair to 6's counterclockwise-most pair)</span><br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Scallop/Scallop<span style="font-size:80%;">(by connecting Pair to 6's clockwise-most pair)</span>
-                - Solve
+                <span>
+                    • Scallop/Scallop <span style="font-size:80%;">(by connecting Pair to 6's clockwise-most pair)</span><br>
+                    • Solve
+                </span>
             </div>
 
             <div class="alg-box">
@@ -361,29 +382,36 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Scallop/Kite<br>
-                - 4-1-1/L<br>
-                - Scallop/Kite<span style="font-size:80%;">(switch which edges of the Kite's Ls are connected)</span>
-                - Solve
+                <span>
+                    • Scallop/Kite<br>
+                    • 4-1-1/L<br>
+                    • Scallop/Kite <span style="font-size:80%;">(switch which edges of the Kite's Ls are connected)</span><br>
+                    • Solve
+                </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Scallop/Kite<br>
-                - Solve
+                • Scallop/Kite<br>
+                • Solve
             </div>
 
             <div class="alg-box">
-                <b>Opposite Fist/Fist</b><br><span style="font-size:80%;">Left Fist/Right Fist</span>
+                <b>Left Fist/Right Fist</b><br>
+                <span style="font-size:80%;">
+                    AKA:<br>
+                    <b>Opposite Fist/Fist</b><br>
+                    <b>Good Fist/Fist</b>
+                </span>
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Solve
+                • Solve
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Opposite Paw/Paw<br>
-                - Slice across the corner pieces<br>
-                - Solve
+                • Opposite Paw/Paw<br>
+                • Slice across the corner pieces<br>
+                • Solve
             </div>
 
             <div class="alg-box">
@@ -391,17 +419,213 @@
             </div>
             <div class="alg-box">
                 <b>Odd:</b><br>
-                - Right 5-1/Pair<br>
-                - Scallop/Kite<br>
-                - Solve
+                • Right 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
-                - Left 5-1/Pair<br>
-                - Scallop/Kite<br>
-                - Solve
+                • Left 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
             </div>
 
+            <div class="alg-box">
+                <b>4-1-1/L</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Scallop/Kite <span style="font-size:80%;">(by connecting 4-1-1's L's counterclockwise-most edge to L's clockwise-most edge)</span><br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Scallop/Kite <span style="font-size:80%;">(by connecting 4-1-1's L's clockwise-most edge to L's clockwise-most edge)</span><br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Muffin/Fist</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                • Scallop/Fist<br>
+                • Left 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                • Scallop/Fist<br>
+                • Left 5-1/Pair<br>
+                • Scallop/Kite<br>
+                • Solve
+            </div>
+
+            <div class="alg-box">
+                <div class="alg-box orange">
+                    <b>Left Fist/Kite</b>
+                </div>
+                <div class="alg-box">
+                    <b>Right Fist/Kite</b>
+                </div>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                • Paw/Square<br>
+                • 4-1-1/L<br>
+                • Scallop/Kite<span style="font-size:80%;">(by connecting 4-1-1's L's counterclockwise-most edge to L's clockwise-most edge)</span>
+                • Solve
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                • Paw/Square<br>
+                • 4-1-1/L<br>
+                • Scallop/Kite<span style="font-size:80%;">(by connecting 4-1-1's L's clockwise-most edge to L's clockwise-most edge)</span>
+                • Solve
+            </div>
+
+            <div class="alg-box">
+                <b>Barrel/Fist</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Muffin/Paw<br>
+                    • 4-2/Pair <span style="font-size:80%;">(without moving Muffin)</span><br>
+                    • Scallop/Scallop<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Muffin/Paw<br>
+                    • 4-2/Pair <span style="font-size:80%;">(without moving Muffin)</span><br>
+                    • Shield/Shield<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>6/L</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Right 5-1/Pair<br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Left 5-1/Pair<br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <div class="alg-box">
+                    <b>Scallop/Left Paw</b>
+                </div>
+                <div class="alg-box orange">
+                    <b>Scallop/Right Paw</b>
+                </div>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • 5-1/Pair <span style="font-size:80%;">(by connecting Paw's L to Scallop)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • 5-1/Pair <span style="font-size:80%;">(by connecting one of Scallop's pairs to Paw)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Scallop/Muffin</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • 5-1/Pair <span style="font-size:80%;">(by leaving Muffin's counterclockwise-most pair alone)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • 5-1/Pair <span style="font-size:80%;">(by leaving Muffin's clockwise-most pair alone)</span><br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Paw/Shield</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Slice across the corner pieces<br>
+                    • 5-1/Pair<br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • 5-1/Pair<br>
+                    • Scallop/Kite<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <div class="alg-box orange">
+                    <b>Left Paw/Left Fist</b>
+                </div>
+                <div class="alg-box">
+                    <b>Right Paw/Right Fist</b>
+                </div><br>
+                <span style="font-size:80%;">
+                    AKA:<br>
+                    <b>Similar Paw/Fist</b><br>
+                    <b>Bad Paw/Fist</b>
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • 3-3/L<br>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by only moving 3-3)</span><br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • 3-3/L<br>
+                    • Opposite Paw/Paw <span style="font-size:80%;">(by only moving L)</span><br>
+                    • Solve
+                </span>
+            </div>
 
         </div>
 
