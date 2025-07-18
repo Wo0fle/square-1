@@ -26,15 +26,15 @@
         <h3><i>Easy Cubeshape Parity</i></h3><br>
 
         <div>
-            For this guide, I am assuming <b>black top / white bottom</b> and an otherwise <b>standard color scheme</b>.
+            For this guide, I am assuming <b>black top/white bottom</b> and an otherwise <b>standard color scheme</b>.
             <br><br>
-            • <b><u>Orientation</u></b> refers to the <b>color on U or D</b> (black or white),<br>
-            • <b><u>Color</u></b> refers to the <b>color on rest of the piece</b> (green, orange, blue, or red), and<br>
-            • <b><u>Type</u></b> refers to whether it is an <b>edge or a corner</b>.
+            • <b><u>Orientation</u></b> refers to the <b>color on U or D</b> (black or white)<br>
+            • <b><u>Color</u></b> refers to the <b>color on rest of the piece</b> (green, orange, blue, or red)<br>
+            • <b><u>Type</u></b> refers to whether it is an <b>edge or a corner</b>
         </div>
 
         <br>
-        <h1><u>Shapes</u></h1>
+        <h1 id="shapes"><u>Shapes</u></h1>
         <h4><i>24 general shapes</i></h4>
         <h5 style="margin:0;"><i>29 total shapes (i.e. mirrored shapes count seperately)</i></h5>
         
@@ -45,8 +45,8 @@
             • <b style="background:red;text-shadow:none;">Red</b>: Odd-numbered edge positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)<br>
             • <b style="background:cyan;color:black;text-shadow:none;">Cyan</b>: Odd-numbered corner positions (if it's the same type, include the <span style="background:#674ea7;text-shadow:none;">purple</span> piece)
             <br><br>
-            Keep in mind that these are the tracing positions that make the most sense to me, but if you don't like them, feel free to choose a new one.<br><br>
-            <span style="font-size: 120%;">Just remember to <b>check the solutions</b> with that shape in them to see if the <b>Odd/Even solutions swapped</b> or not!</span>
+            Keep in mind that these are the tracing positions that make the most sense to me, but if you don't like them, feel free to choose new ones.<br><br>
+            <span style="font-size: 120%;">Just remember to <b>check the solutions</b> after picking a new tracing scheme to see if the <b>Odd/Even solutions swapped</b> or not!</span>
         </div>
         
         <br><br>
@@ -58,6 +58,16 @@
 
         <br><br>
         <h3 style="margin: 0;"><u>2 Edges</u></h3>
+
+        <br><div style="font-size: 80%;">
+            <b>Note</b>:
+            You may notice the <b style="background:cyan;color:black;text-shadow:none;">cyan pieces</b> seem to <b>not be odd-numbered</b>.
+            That's because <b>they have 5 corners</b> (which means the other layer has 3 corners), and when tracing, they are <b>always done second</b>.
+            Since the <b>first layer has 3 corners</b>, the <b>1st and 3rd corner positions</b> of the <b>entire cubeshape</b> will <b>correspond to the 
+            1st and 3rd corner positions of the first layer</b> (as expected), but the <b>5th and 7th corner positions</b> of 
+            the <b>entire cubeshape</b> will actually <b>correspond to the 2nd and 4th corner positions of the second layer</b>.
+            "Odd-numbered corner position" is in the context of the <b>entire cubeshape</b>, not the single layer.
+        </div>
 
         <div id="algs-container">
             <div class="alg-box">Pair<br>(Paired edges)</div><div class="alg-box image"><img src="../images/cs/csp/pair.svg" alt="Pair (Paired edges)."></div><br>
@@ -120,7 +130,7 @@
 
         <br><br><hr><br><br>
         
-        <h1 style="margin: 0;"><u>Tracing</u></h1><br><br>
+        <h1 id="tracing" style="margin: 0;"><u>Tracing</u></h1><br><br>
 
         <div>
             Start your parity count at 0.
@@ -176,7 +186,7 @@
 
             <div class="alg-box">5. Edge Position Parity</div>
             <div class="alg-box" style="display:inline-block;padding:30px;">
-                Consider the <b>orientation</b> of the <b>edges in the odd-numbered edge positions</b> (i.e the <b><span style="background:red;text-shadow:none;">red</span> pieces</b>), including the <b style="background:#674ea7;text-shadow:none;">purple piece</b> if it is an edge.
+                Consider the <b>orientation</b> of the <b>edges in the odd-numbered edge positions</b> (i.e the <b><span style="background:red;text-shadow:none;">red</span> pieces</b>), starting from the <b style="background:#674ea7;text-shadow:none;">purple piece</b> (and including it if it is an edge).
                 <br><br>
                 If there are an <u>odd amount</u> of <u>black edges</u> in these positions, <b>+1 to parity count</b>.
                 <br><br>
@@ -185,7 +195,7 @@
 
             <div class="alg-box">6. Corner Position Parity</div>
             <div class="alg-box" style="display:inline-block;padding:30px;">
-                Same as above, but instead consider the <b>orientation</b> of the <b>corners in the odd-numbered corner positions</b> (i.e the <b><span style="background:cyan;color:black;text-shadow:none;">cyan</span> pieces</b>), including the <b style="background:#674ea7;text-shadow:none;">purple piece</b> if it is a corner. 
+                Same as above, but instead consider the <b>orientation</b> of the <b>corners in the odd-numbered corner positions</b> (i.e the <b><span style="background:cyan;color:black;text-shadow:none;">cyan</span> pieces</b>), starting from the <b style="background:#674ea7;text-shadow:none;">purple piece</b> (and including it if it is an corner).
             </div><br>
         </div><br>
 
@@ -195,7 +205,7 @@
 
         <br><br><hr><br>
 
-        <h1><u>Solution</u></h1>
+        <h1 id="solution"><u>Solution</u></h1>
         <h4><i>65 general cases</i></h4>
         <h5 style="margin:0;"><i>78 distinct cases (i.e. horizontally mirrored cubeshapes with different solutions count separately)</i></h5>
         
@@ -204,12 +214,6 @@
             <u>How it Works:</u><br><br>
             For the general cubeshape <b>X/Y</b>, start tracing from the <b>starting position</b> (i.e. the <b><span style="background:#674ea7;text-shadow:none;">purple</span> piece</b>) of <b>X</b>,
             even if it is on the bottom layer.
-            <br><br>
-            <div class="alg-box" style="display:inline-block;font-size:80%;">
-                <u>Example:</u> 
-                For the case <b>8/Star</b>, start tracing from the <b><span style="background:#674ea7;text-shadow:none;">purple</span> piece</b> of the <b>8</b>. 
-                If it is on the bottom, I like to do a z2 rotation and trace from there.
-            </div>
             <br><br>
             If a case is in an <span style="display:inline-block;border:3px double #ff9900;padding:5px;">orange box</span>
             you will have to <b>+1 extra</b> to your parity count before determining your solution.
@@ -1042,16 +1046,15 @@
             <div class="alg-box">
                 <b>Odd:</b><br>
                 <span>
-                    • 4-2/Pair <span style="font-size:80%;">(by leaving Muffin's counterclockwise-most pair alone)</span><br>
-                    • Scallop/Scallop<br>
+                    • 5-1/Pair <span style="font-size:80%;">(by slicing when 4-2's Pair is directly next to the slice)</span><br>
+                    • Scallop/Kite<br>
                     • Solve
                 </span>
             </div>
             <div class="alg-box">
                 <b>Even:</b><br>
                 <span>
-                    • 4-2/Pair <span style="font-size:80%;">(by leaving Muffin's clockwise-most pair alone)</span><br>
-                    • Scallop/Scallop<br>
+                    • Scallop/Kite<br>
                     • Solve
                 </span>
             </div>
@@ -1399,15 +1402,209 @@
                 </span>
             </div>
 
+            <div class="alg-box">
+                <div class="alg-box">
+                    <b>Left Paw/Square</b>
+                </div>
+                <div class="alg-box orange">
+                    <b>Right Paw/Square</b>
+                </div>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • 4-1-1/L<br>
+                    • Scallop/Kite <span style="font-size:80%;">(by connecting 4-1-1's L's counterclockwise-most edge to L's clockwise-most edge)</span><br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • 4-1-1/L<br>
+                    • Scallop/Kite <span style="font-size:80%;">(by connecting 4-1-1's L's clockwise-most edge to L's counterclockwise-most edge)</span><br>
+                    • Solve
+                </span>
+            </div>
 
+            <div class="alg-box">
+                <b>8/Star</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Move Star by ±2<br>
+                    • Scallop/Scallop <span style="font-size:80%;">(by slicing when edges are in the back)</span><br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Scallop/Scallop <span style="font-size:80%;">(by slicing when edges are in the back)</span><br>
+                    • Solve
+                </span>
+            </div>
 
-        </div>
+            <div class="alg-box">
+                <b>6-2/Star</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Move Star by ±2<br>
+                    • Opposite Paw/Paw<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Opposite Paw/Paw<br>
+                    • Solve
+                </span>
+            </div>
 
-        <div style="color: yellow;">
-            <br>
-            almost done!<br><br>
+            <div class="alg-box">
+                <b>Muffin/Muffin</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Barrel/Barrel<br>
+                    • Scallop/Scallop<br>
+                    • Slice across the corner pieces<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Solve
+                </span>
+            </div>
 
-            <a href="https://docs.google.com/document/d/10N1Hnrn6S9Y684V1_0eJR53ElNiyHNPNw3eagvFnZs8/edit?usp=sharing" target="_blank">Seby's CSP Guide Google Doc</a>
+            <div class="alg-box">
+                <b>Muffin/Square</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Opposite Fist/Fist<br>
+                    • Opposite Paw/Paw<br>
+                    • Slice across the corner pieces<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Barrel/Barrel</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Scallop/Scallop<br>
+                    • Slice across the corner pieces<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Kite/Kite</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Barrel/Barrel<br>
+                    • Shield/Shield<br>
+                    • Slice across the corner pieces<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>4-4/Star</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Shield/Shield<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Move Star by ±2<br>
+                    • Shield/Shield<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>2-2-2/I</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Shield/Kite<br>
+                    • 3-1-2/L<br>
+                    • Shield/Square<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Shield/Kite<br>
+                    • 3-2-1/L<br>
+                    • Shield/Square<br>
+                    • Solve
+                </span>
+            </div>
+
+            <div class="alg-box">
+                <b>Square/Square</b>
+            </div>
+            <div class="alg-box">
+                <b>Odd:</b><br>
+                <span>
+                    • Kite/Kite<br>
+                    • Barrel/Barrel<br>
+                    • Shield/Shield<br>
+                    • Slice across the corner pieces<br>
+                    • Solve
+                </span>
+            </div>
+            <div class="alg-box">
+                <b>Even:</b><br>
+                <span>
+                    • Done :D
+                </span>
+            </div>
+        </div><br>
+
+        <div>
+            Struggling with <b>visualizing</b>, <b>remembering</b>, or <b>fingertricking</b> some of these solutions?<br><br>
+            <a href="./abcsp.html">ABCSP</a> <span style="color: yellow;">will eventually have</span> <b>algorithmic/ergonomic solutions</b> for <b>every case</b>!
         </div>
 
         <ul>
