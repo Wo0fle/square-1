@@ -44,3 +44,5 @@ for (let alg in alglist) {
     alg.optimalSliceCount = (alg.optimalAlg.match(/\//g) || []).length;
     alg.extraSliceCount = (alg.optimalAlg.match(/\//g) || []).length;
 }
+
+// ehhhhhhhhh ill figure this out eventually
